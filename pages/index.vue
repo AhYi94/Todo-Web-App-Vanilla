@@ -83,7 +83,8 @@ export default {
     addItem() {
       this.newItem.id = this.items.length + 1
       this.newItem.list = 1
-      return this.items.push({ ...this.newItem })
+      this.items.push({ ...this.newItem })
+      this.newItem.name = null
     },
   },
 }
