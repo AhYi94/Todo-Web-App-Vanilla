@@ -81,6 +81,10 @@ export default {
   },
   methods: {
     addItem() {
+      if (!this.newItem.name) {
+        alert("Title shouldn't be empty")
+        return
+      }
       this.newItem.id = this.items.length + 1
       this.newItem.list = 1
       this.items.push({ ...this.newItem })
