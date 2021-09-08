@@ -16,7 +16,7 @@
       v-for="element in listItem"
       :key="element.id"
       draggable="true"
-      class="bg-white p-5 border-b-2"
+      class="bg-white p-5 border-b-2 break-all"
       @dragstart="startDrag($event, element)"
     >
       {{ element.name }}
